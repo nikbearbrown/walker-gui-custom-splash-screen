@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1310" height="480" viewBox="0 0 1310 480" role="img" aria-labelledby="t d">
+<title id="t">Recovered boot → splash → main flow</title>
+<desc id="d">Engine boot with hidden image, 4-second splash animation in three phases, scene change on animation_finished, main fade-in, Restart relaunch. IDs: M-01..M-07, S-01, F-01..F-05.</desc>
+<rect width="1310" height="480" fill="#faf9f5"/>
+<defs>
+<marker id="a" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#25354a"/></marker>
+<marker id="p" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#d24e42"/></marker>
+</defs>
+<g font-family="Helvetica, Arial, sans-serif" fill="#25354a">
+<text x="32" y="44" font-size="26" font-weight="700">Recovered boot → splash → main flow</text>
+<text x="32" y="70" font-size="14" fill="#5b6b7c">One-way sequence, no loop except Restart (which relaunches the whole process and is unverified). Times from splash.tscn keys.</text>
+<path d="M234 160 L296 160" fill="none" stroke="#25354a" stroke-width="2" marker-end="url(#a)"/>
+<path d="M514 160 L576 160" fill="none" stroke="#25354a" stroke-width="2" marker-end="url(#a)"/>
+<path d="M794 160 L856 160" fill="none" stroke="#25354a" stroke-width="2" marker-end="url(#a)"/>
+<path d="M965 204 L965 316" fill="none" stroke="#25354a" stroke-width="2" marker-end="url(#a)"/>
+<text x="845" y="260" font-size="13" fill="#5b6b7c" text-anchor="middle" paint-order="stroke" stroke="#faf9f5" stroke-width="4">animation_finished →</text>
+<text x="845" y="275" font-size="13" fill="#5b6b7c" text-anchor="middle" paint-order="stroke" stroke="#faf9f5" stroke-width="4">change_scene_to_packed(load())</text>
+<path d="M856 360 L754 360" fill="none" stroke="#25354a" stroke-width="2" marker-end="url(#a)"/>
+<path d="M516 360 L394 360" fill="none" stroke="#25354a" stroke-width="2" marker-end="url(#a)"/>
+<text x="452" y="354" font-size="13" fill="#5b6b7c" text-anchor="middle" paint-order="stroke" stroke="#faf9f5" stroke-width="4">Restart pressed</text>
+<path d="M239 316 L161 204" fill="none" stroke="#25354a" stroke-width="2" marker-end="url(#a)"/>
+<text x="150" y="254" font-size="13" fill="#5b6b7c" text-anchor="middle" paint-order="stroke" stroke="#faf9f5" stroke-width="4">new process</text>
+<path d="M1051 204 L1114 236" fill="none" stroke="#d24e42" stroke-width="2" stroke-dasharray="8 6" marker-end="url(#p)"/>
+<text x="1132" y="198" font-size="13" fill="#d24e42" text-anchor="middle" paint-order="stroke" stroke="#faf9f5" stroke-width="4">no input</text>
+<text x="1132" y="212" font-size="13" fill="#d24e42" text-anchor="middle" paint-order="stroke" stroke="#faf9f5" stroke-width="4">handler today</text>
+<rect x="30" y="120" width="200" height="80" rx="8" fill="#fffdf7" stroke="#25354a" stroke-width="2.5"/>
+<text x="130" y="147" font-size="16" font-weight="700" fill="#25354a" text-anchor="middle">Engine boot</text>
+<text x="130" y="165" font-size="13" fill="#5b6b7c" text-anchor="middle">no image, black bg</text>
+<text x="130" y="183" font-size="13" fill="#5b6b7c" text-anchor="middle">project.godot:17-18</text>
+<rect x="300" y="120" width="210" height="80" rx="22" fill="#fffdf7" stroke="#25354a" stroke-width="2.5"/>
+<text x="405" y="147" font-size="16" font-weight="700" fill="#25354a" text-anchor="middle">Splash 0–0.7 s</text>
+<text x="405" y="165" font-size="13" fill="#5b6b7c" text-anchor="middle">overlay black → clear</text>
+<text x="405" y="183" font-size="13" fill="#5b6b7c" text-anchor="middle">logo y 230 → 200</text>
+<rect x="580" y="120" width="210" height="80" rx="22" fill="#fffdf7" stroke="#25354a" stroke-width="2.5"/>
+<text x="685" y="147" font-size="16" font-weight="700" fill="#25354a" text-anchor="middle">Splash 0.7–3 s</text>
+<text x="685" y="165" font-size="13" fill="#5b6b7c" text-anchor="middle">hold · particles</text>
+<text x="685" y="183" font-size="13" fill="#5b6b7c" text-anchor="middle">splash.tscn:45-60</text>
+<rect x="860" y="120" width="210" height="80" rx="22" fill="#fffdf7" stroke="#25354a" stroke-width="2.5"/>
+<text x="965" y="147" font-size="16" font-weight="700" fill="#25354a" text-anchor="middle">Splash 3–4 s</text>
+<text x="965" y="165" font-size="13" fill="#5b6b7c" text-anchor="middle">overlay → black</text>
+<text x="965" y="183" font-size="13" fill="#5b6b7c" text-anchor="middle">logo y 200 → 170</text>
+<rect x="860" y="320" width="210" height="80" rx="22" fill="#fffdf7" stroke="#25354a" stroke-width="2.5"/>
+<text x="965" y="347" font-size="16" font-weight="700" fill="#25354a" text-anchor="middle">Main fade_in 1 s</text>
+<text x="965" y="365" font-size="13" fill="#5b6b7c" text-anchor="middle">overlay ignores mouse</text>
+<text x="965" y="383" font-size="13" fill="#5b6b7c" text-anchor="middle">main.tscn:20-33,85</text>
+<rect x="520" y="320" width="230" height="80" rx="22" fill="#fffdf7" stroke="#25354a" stroke-width="2.5"/>
+<text x="635" y="347" font-size="16" font-weight="700" fill="#25354a" text-anchor="middle">Main idle</text>
+<text x="635" y="365" font-size="13" fill="#5b6b7c" text-anchor="middle">label + Restart button</text>
+<text x="635" y="383" font-size="13" fill="#5b6b7c" text-anchor="middle">main.tscn:69-77</text>
+<rect x="150" y="320" width="240" height="80" rx="8" fill="#fffdf7" stroke="#25354a" stroke-width="2.5"/>
+<text x="270" y="347" font-size="16" font-weight="700" fill="#25354a" text-anchor="middle">set_restart_on_exit + quit</text>
+<text x="270" y="365" font-size="13" fill="#5b6b7c" text-anchor="middle">main.gd:4-6</text>
+<text x="270" y="383" font-size="13" fill="#5b6b7c" text-anchor="middle">relaunch UNVERIFIED</text>
+<rect x="1100" y="240" width="180" height="70" rx="8" fill="#faf9f5" stroke="#5b6b7c" stroke-width="2.5" stroke-dasharray="8 6"/>
+<text x="1190" y="271" font-size="16" font-weight="700" fill="#5b6b7c" text-anchor="middle">Skip on input?</text>
+<text x="1190" y="289" font-size="13" fill="#5b6b7c" text-anchor="middle">[MISSING] Q-04</text>
+<line x1="32" y1="454" x2="72" y2="454" stroke="#25354a" stroke-width="2.5"/><text x="80" y="458" font-size="13" fill="#5b6b7c">observed in code (solid)</text>
+<line x1="260" y1="454" x2="300" y2="454" stroke="#d24e42" stroke-width="2.5" stroke-dasharray="8 6"/><text x="308" y="458" font-size="13" fill="#5b6b7c">proposed / not in code (dashed)</text>
+<line x1="520" y1="454" x2="560" y2="454" stroke="#5b6b7c" stroke-width="2.5" stroke-dasharray="8 6"/><text x="568" y="458" font-size="13" fill="#5b6b7c">[MISSING] intent (grey dashed)</text>
+</g></svg>

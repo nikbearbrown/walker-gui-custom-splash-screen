@@ -1,0 +1,14 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+PASS engine splash image disabled
+PASS boot background black
+PASS splash scene starts
+PASS animation autoplays
+PASS splash remains during hold
+PASS hold overlay transparent
+PASS animation completion transitions to main
+PASS prior splash scene freed
+PASS main fade completes
+PASS main overlay does not block input
+PASS restart signal connected; process restart not invoked
+HEADLESS REAL-TIME STATE ONLY; no rendered splash, input-driven restart or films verified. failures=0
